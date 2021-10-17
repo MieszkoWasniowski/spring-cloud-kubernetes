@@ -146,7 +146,7 @@ public abstract class ConfigurationChangeDetector {
 			else if (source instanceof BootstrapPropertySource) {
 				PropertySource<?> propertySource = ((BootstrapPropertySource<?>) source).getDelegate();
 				if (sourceClass.isInstance(propertySource)) {
-					sources.add(propertySource);
+					managedSources.add(propertySource);
 				}
 			}
 		}
